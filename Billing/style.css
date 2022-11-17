@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+body { 
+    background-color: rgb(185, 200, 240);
+    font-weight: bolder;
+}
+
+h1 {
+    padding: auto;
+    text-align: center;
+    border-style: double;
+}
+
+h2 {
+    color: rgb(153, 51, 68);
+}
+
+.container {
+    display: flex;
+}
+
+.BS {
+    display: flex;
+}
+
+.Customer {
+    border-style: double;
+}
+
+.CD {
+    padding-left: 250px;
+    display: flex;
+}
+
+.buttons {
+    margin-left: 470px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: whitesmoke;
+    background-color: rgb(153, 51, 68);
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3 px;
+    cursor: pointer;
+}
+
+.MENU {
+    display: flex;
+    border-style: double;
+    color: black;
+    padding: 0px;
+}
+
+.A div input {
+    width: 15vw;
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+.form-label {
+    display: inline-block;
+    font-size: small;
+    width: 5%;
+    min-width: 150px;
+    width: 10vw;
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+.form-control1 {
+    width: 154px;
+    border-radius: 5px;
+}
+
+.form-label1 {
+    font-size: small;
+    padding: 3px;
+}
+
+.form-control {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.B div input {
+    width: 15vw;
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+.table th {
+    width: 160px;
+}
+
+.A {
+    border-style: double;
+    width: 30vw;
+}
+
+.B {
+    border-style: double;
+    width: 30vw;
+}
+
+.BA {
+    font-size: small;
+    width: 485px;
+    border-style: double;
+    padding-left: 4px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.BM {
+    border-style: double;
+}
