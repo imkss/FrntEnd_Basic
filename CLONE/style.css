@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&family=PT+Sans&family=Tourney:wght@100&display=swap");
+
+/* RESETS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 600%;
+  color: var(--hero-hdr);
+}
+
+h2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8125rem;
+  color: var(--hero-hdr);
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--hero-hdr);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --hero-bg: #fcd750;
+  --hero-hdr: #2d2c4c;
+  --hero-subhdr: #ffffff;
+  --btn-p-bg: #20a5e6;
+  --feature-bg: #bce3f5;
+  --pad: 40px;
+}
+
+/* UTILITY CLASSES */
+
+.container {
+  max-width: 1366px;
+  margin-inline: auto;
+  padding-inline: 100px;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.hover-link {
+  color: var(--hero-hdr);
+  transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+  color: var(--btn-p-bg);
+}
+
+.btn {
+  background-color: var(--btn-p-bg);
+  color: var(--hero-subhdr);
+  padding: 7px 14px;
+  border-radius: 4px;
+  transition: 0.4s ease-in-out;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: rgb(106, 174, 233);
+}
+
+/* NAVBAR */
+
+.hero {
+  padding-top: 60px;
+  background-color: var(--hero-bg);
+}
+
+.hero h2 {
+  font-size: xx-large;
+  font-weight: 100;
+  line-height: 2rem;
+}
+
+.navbar {
+  overflow: hidden;
+  width: 100%;
+}
+
+.navbar ul {
+  justify-content: end;
+  gap: 50px;
+}
+
+.wel {
+  color: var(--hero-subhdr);
+  background-color: var(--hero-hdr);
+  display: inline;
+}
+
+.leftBox {
+  padding-right: 48px;
+}
+
+.right img {
+  width: 343px;
+  position: relative;
+  right: 100px;
+}
+
+/* <!-- DETAILS --> */
+
+.box {
+  background-color: var(--hero-bg);
+  gap: 60px;
+  padding-bottom: 67px;
+  padding-top: 67px;
+}
+
+.det img {
+  margin-top: var(--pad);
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.det p {
+  margin-bottom: 15px;
+}
+
+.clr {
+  color: var(--btn-p-bg);
+}
+
+/* <!-- PROCESS --> */
+
+.proImg {
+  float: left;
+  margin-right: 65px;
+  margin-top: 40px;
+}
+
+.proImg img {
+  width: 220px;
+}
+
+.pro {
+  margin-top: 40px;
+  font-size: small;
+}
+
+.mini {
+  margin-top: var(--pad);
+  gap: 100px;
+  margin-bottom: var(--pad);
+  align-items: baseline;
+}
+
+/* <!-- FEATURES --> */
+
+.feat {
+  background-color: var(--feature-bg);
+}
+
+.res {
+  margin-top: 40px;
+  font-size: small;
+}
+
+.device {
+  justify-content: center;
+  gap: 120px;
+}
+
+.dev {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.dev img {
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 45px;
+}
+
+.dev p {
+  margin-bottom: 45px;
+}
+
+/* SERVICES */
+
+.ser {
+  margin-top: var(--pad);
+  gap: 100px;
+  margin-bottom: var(--pad);
+  align-items: baseline;
+}
+
+.proImg2 {
+  float: left;
+  margin-right: 65px;
+  margin-top: 40px;
+}
+
+.proImg2 img {
+  width: 220px;
+  transform: rotate(180deg);
+}
+
+/* AOUBT US */
+
+.abt {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.abt img {
+  margin-bottom: 20px;
+}
+
+.abt h2 {
+  margin-bottom: 20px;
+}
+
+.abt p {
+  margin-bottom: 20px;
+}
+
+/* .abt .btn{
+  background-color:var(--hero-hdr);
+}
+
+.abt .btn:hover{
+  background-color: #616166;
+} */
+
+/* TALK */
+
+.talk {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.talk p {
+  margin-bottom: var(--pad);
+}
+
+.proImg3 {
+  float: left;
+  margin-right: 65px;
+  margin-top: 40px;
+}
+
+.proImg3 img {
+  width: 220px;
+  transform: rotate(90deg);
+}
+
+/* FOOTER */
+
+.ftr {
+  background-color: var(--hero-hdr);
+  padding-top: 30px;
+  align-items: baseline;
+  gap: 114px;
+}
+
+.ftr img {
+  margin-right: 10px;
+  width: 47px;
+}
+
+.lnks a {
+  color: var(--hero-bg);
+  padding-bottom: 15px;
+}
+
+.add h4 {
+  color: var(--hero-subhdr);
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+.media h4 {
+  color: var(--hero-subhdr);
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+.media p {
+  color: var(--btn-p-bg);
+  font-size: xx-large;
+  line-height: 4rem;
+}
+
+.media img {
+  width: 35px;
+}

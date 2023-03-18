@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2rem;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  background: -webkit-linear-gradient(67.4deg, #041308 50%, #0b3317 50%);
+}
+
+.left-text {
+  flex-basis: 30%;
+}
+
+.heading {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sub-heading {
+  color: #ddd;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.gallery {
+  flex-basis: 50%;
+  display: grid;
+  gap: 8px;
+  grid-template-areas:
+    "wtr hil hil "
+    "wtr ocn ran "
+    "man man ran "
+    "tre bch bch ";
+  grid-auto-rows: 120px;
+  /* grid-template-columns: repeat(3, 1fr); */
+}
+
+.box {
+  background-size: cover;
+  background-position: top;
+  color: #0b3317;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  background-blend-mode: hard-light;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.box:hover {
+  font-weight: 700;
+  color: #041308;
+  background-color: #999;
+  background-position: center;
+  box-shadow: 0 0 4px white;
+}
+
+#b1 {
+  grid-area: wtr;
+}
+#b2 {
+  grid-area: hil;
+}
+#b3 {
+  grid-area: ocn;
+}
+#b4 {
+  grid-area: ran;
+}
+#b5 {
+  grid-area: man;
+}
+#b6 {
+  grid-area: tre;
+}
+#b7 {
+  grid-area: bch;
+}
+
+/* Media Queries  for width <= 1024px*/
+@media screen and (width <= 1024px) {
+  .container {
+    flex-direction: column;
+    padding-block: 20px;
+  }
+  .gallery {
+    width: 100%;
+  }
+  .box {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+}
