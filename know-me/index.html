@@ -5,6 +5,7 @@
     <title>Know me!</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slide.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +14,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div class="top-con">
       <img class="top-cloud" src="cloud.png" alt="cloud-img" />
@@ -20,10 +22,13 @@
       <div class="navbar">
         <ul>
           <li>
-            <a href="#my-Intro">About</a>
+            <a href="#">About</a>
           </li>
           <li>
             <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#work">Works</a>
           </li>
           <li>
             <a href="#GIT">Contact</a>
@@ -34,7 +39,9 @@
       <h1 class="name">I'm Sunny</h1>
 
       <div class="tag">
-        <h2>Programmer by passion & Designer by hobby</h2>
+        <!--       <h2>Programmer by passion & Designer by hobby</h2> -->
+        <img src="tag.gif" alt="tag-line" />
+        <br />
         <img
           class="birds"
           src="https://static.wixstatic.com/media/5fa1f0_aa43f094ca524f21bb161589a9e76375~mv2.gif"
@@ -43,22 +50,26 @@
 
       <img class="bottom-cloud" src="cloud.png" alt="cloud-img" />
 
-      <img id="my-Intro" class="moun" src="mountain.png" alt="mountain-img" />
+      <img class="moun" src="mountain.png" alt="mountain-img" />
     </div>
     <div class="mid-con">
-      <div class="profile">
+      <div class="profile" id="my-Intro">
         <img src="dev.png" height="150px" alt="profile-pic" />
         <h2>About</h2>
         <p class="intro">
           <b
-            >Hey! Sunny here, I'm currently persuing B.tech in CSE branch. I
-            love to work on projects. I'm very much pasionate about developing
-            😇 I'm open to work.</b
+            >Hey, what's up? I'm Kumar Sunny Suman by name, currently pursuing B
+            Tech from NIST, Berhampur in CSE branch. My intrest includes
+            programming, development and designing. Talking about my projects, I
+            have worked on Web Apps and Android apps development apart from
+            these I also love to solve DSA problems using Java. Like a typical
+            engineering student in my free time, I take random photographs as
+            well as sing sometimes.</b
           >
         </p>
       </div>
-      <hr />
-      <div id="skills" class="skills">
+      <hr id="skills" />
+      <div class="skills">
         <h2>My Skills</h2>
         <div class="skill-row">
           <img class="web-dev" src="web-dev.png" alt="web-dev" />
@@ -76,11 +87,10 @@
           <h3>Java Developer</h3>
           <p>
             <b
-              >Designs, develops and manages Java-based applications and
-              software. With most large organizations using Java to implement
-              software systems and backend services. Able to develope,
-              implement, and maintain the Java-based components and
-              interfaces.</b
+              >Design Java-based applications and software. With most large
+              organizations using Java to implement software systems and backend
+              services. Able to develope, implement, and maintain the Java-based
+              components and interfaces.</b
             >
           </p>
         </div>
@@ -98,13 +108,84 @@
           </p>
         </div>
       </div>
+      <hr id="work" />
+      <div class="pro">
+        <h2>My Works</h2>
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide4" class="carousel__prev"
+                  >Go to last slide</a
+                >
+                <a href="#carousel__slide2" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide1" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide3" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide2" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide4" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide3" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide1" class="carousel__next"
+                >Go to first slide</a
+              >
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button"
+                  >Go to slide 1</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button"
+                  >Go to slide 2</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button"
+                  >Go to slide 3</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button"
+                  >Go to slide 4</a
+                >
+              </li>
+            </ol>
+          </aside>
+        </section>
+      </div>
+
       <hr />
       <div id="GIT" class="contact-me">
         <h2>Get In Touch</h2>
         <h3>Contact me for work/general Enquries</h3>
         <p class="con">
           <b
-            >Developer, Designer & Explorer. Love to work on projects with team.
+            >Developer, Designer & Explorer. Trying to Design Minimal but
+            Futuristic. Love to Work on Projects.
           </b>
         </p>
         <a class="btn" href="mailto:kumarsunnysuman2002@gmail.com"
@@ -119,17 +200,18 @@
         target="_blank"
         >LinkedIn</a
       >
+      <a class="footer-link" href="https://github.com/imkss" target="_blank"
+        >github</a
+      >
       <a
         class="footer-link"
         href="https://twitter.com/i_m_k_s_s"
         target="_blank"
         >Twitter</a
       >
-      <a class="footer-link" href="https://github.com/imkss" target="_blank"
-        >github</a
-      >
+
       <p class="copy">
-        Designed & Maintained with ❤ by Sunny<br />All rights reserved © 2022
+        Designed & Maintained with 🤍 by Sunny<br />All rights reserved © 2023
       </p>
     </div>
   </body>
