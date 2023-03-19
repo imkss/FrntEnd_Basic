@@ -1,5 +1,9 @@
-body {
+* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+body {
   color: #40514e;
   text-align: center;
   scrollbar-width: 0px;
@@ -8,10 +12,11 @@ body {
 p {
   line-height: 1.75;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
 }
 h1 {
   color: #66bfbf;
-  margin: 33px 150px -25px 120px;
+  margin: -70px 150px -153px 120px;
   font-family: "Sacramento", cursive;
   font-size: 5.625rem;
   line-height: 2;
@@ -28,11 +33,16 @@ h3 {
   font-family: "Montserrat";
 }
 .name {
-  margin-top: 12px;
+  position: absolute;
+  /* top: 30px; */
+  display: contents;
+  justify-content: center;
 }
-
+.me {
+  align-items: center;
+  text-align: center;
+}
 .top-con {
-  padding: 25px;
   background-color: #eaf6f6;
   border: solid 10%;
 }
@@ -48,26 +58,23 @@ hr {
   width: 5%;
   margin: 75px auto 75px auto;
 }
-.bot-con {
-  background-color: #66bfbf;
-  padding: 15px 0 2px;
-}
 
 .bot-con a {
   font-size: 1.85em;
-  color: #eaf6f6;
+  color: #11999e;
 }
 
 .top-cloud {
   float: left;
   position: absolute;
-  top: 233px;
-  left: 90px;
+  top: 300px;
+  left: 60px;
   margin-left: 65px;
+  z-index: -1;
 }
 .bottom-cloud {
   position: absolute;
-  margin: -75px 305px;
+  margin: -120px 224px;
 }
 .birds {
   position: relative;
@@ -77,6 +84,7 @@ hr {
 .moun {
   margin: -188px;
 }
+
 
 .footer-link {
   color: #11999e;
@@ -89,16 +97,17 @@ a {
   text-decoration: none;
 }
 .navbar {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
-  background-color: #dcccd4;
   z-index: 3;
 }
 
 ul {
+  top: 30px;
   float: right;
   display: flex;
+  position: absolute;
 }
 
 ul li {
@@ -116,10 +125,16 @@ ul li a:hover {
   color: #40514e;
 }
 .bot-con a:hover {
-  color: #11999e;
+  color: #66bfbf;
 }
 a:hover {
   color: #eaf6f6;
+}
+
+.tag img {
+  position: relative;
+  display: inline;
+  top: 45px;
 }
 
 .intro {
@@ -152,6 +167,18 @@ a:hover {
   width: 30%;
   float: left;
   margin-right: 30px;
+}
+
+.copy {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-pic {
+  position: relative;
+  text-align: center;
 }
 
 .btn {
