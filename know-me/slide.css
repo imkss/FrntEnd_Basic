@@ -53,7 +53,6 @@
   font-family: "Lato", sans-serif;
 }
 
-
 *::-webkit-scrollbar {
   width: 0;
 }
@@ -102,7 +101,7 @@ li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-image: url(img/1.png);
+  background-image: url(img/1.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,25 +109,24 @@ li {
 }
 
 .carousel__slide:nth-child(2) {
-  background-image: url(img/2.png);
+  background-image: url(img/2.gif);
   background-position: center;
   background-size: contain;
 }
 
 .carousel__slide:nth-child(3) {
-  background-image: url(img/3.png);
+  background-image: url(img/3.gif);
   background-position: center;
   background-size: contain;
 }
 
 .carousel__slide:nth-child(4) {
-  background-image: url(img/4.png);
+  background-image: url(img/4.gif);
   background-position: center;
   background-size: contain;
 }
 
 .carousel__slide:before {
-  content: counter(item);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -150,7 +148,7 @@ li {
   .carousel__snapper {
     animation-name: tonext, snap;
     animation-timing-function: ease;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
   }
 
