@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/7430/7430132.png" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="image-container">
+        <img id="image" src="demo.jpg" />
+      </div>
+      <div class="btns-container">
+        <input type="file" id="file" accesskey="image/*" />
+        <label for="file">Open A Photo</label>
+        <button id="pick-color">Pick Color</button>
+      </div>
+      <div id="error" class="hide"></div>
+      <div id="result" class="hide">
+        <div>
+          <input type="text" id="hex-val-ref" />
+          <button onclick="copy('hex-val-ref')">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+        <div>
+          <input type="text" id="rgb-val-ref" />
+          <button onclick="copy('rgb-val-ref')">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+        <div id="picked-color-ref"></div>
+      </div>
+      <div id="custom-alert">Color Code Copied!</div>
+    </div>
+    <footer>
+      <p>
+        Designed & Maintained with ❤ by Sunny
+        <br />
+        &copy; 2023 All rights reserved
+      </p>
+    </footer>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
