@@ -1,3 +1,11 @@
+/* 
+html {
+  filter: invert(100%) hue-rotate(180deg);
+}
+:not(img){
+   filter: invert(100%) hue-rotate(180deg);
+} */
+
 * {
   padding: 0;
   margin: 0;
@@ -15,7 +23,7 @@ p {
 }
 h1 {
   color: #66bfbf;
-  margin: -70px 150px -153px 120px;
+  margin: -180px 121px -160px 120px;
   font-family: "Sacramento", cursive;
   font-size: 5.625rem;
   line-height: 2;
@@ -32,6 +40,25 @@ h3 {
   text-decoration: underline;
   color: #11999e;
   font-family: "Montserrat";
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.ban {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 27px;
+  z-index: -3;
+  backdrop-filter: blur(8px);
+}
+
+.tag {
+  margin-top: 150px;
 }
 .name {
   position: absolute;
@@ -95,12 +122,6 @@ a {
   margin: 10px 40px;
   text-decoration: none;
 }
-.navbar {
-  position: relative;
-  top: 0;
-  width: 100%;
-  z-index: 3;
-}
 
 ul {
   font-size: 1.5rem;
@@ -115,13 +136,14 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: #11999e;
+  color: #40514e;
+
   font-weight: bold;
   transition: 0.4s ease-in-out;
 }
 
 ul li a:hover {
-  color: #40514e;
+  color: #11999e;
 }
 .bot-con a:hover {
   color: #66bfbf;
