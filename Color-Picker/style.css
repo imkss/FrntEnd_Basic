@@ -17,11 +17,13 @@ body {
   top: 0.5em;
   padding: 1.5em;
   border-radius: 0.8em;
+  z-index: 1;
 }
 img {
-  display: block;
-  width: 80%;
-  margin: auto;
+    display: block;
+    width: 68%;
+    margin: auto;
+    border-radius: 100%;
 }
 .btns-container {
   display: grid;
@@ -104,4 +106,10 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+.wave{
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
 }
